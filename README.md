@@ -44,6 +44,6 @@ To set up this project locally, follow these steps:
 
 To start the development server, run:
 
-    ```sh
-    pnpm run dev
-    ```
+```sh
+pnpm run dev
+```
