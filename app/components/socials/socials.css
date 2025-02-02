@@ -1,0 +1,109 @@
+#socials {
+  flex-direction: column;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 45px 0;
+}
+
+#socials h1.section-title {
+  font-size: 5.5rem;
+  font-weight: 600;
+  color: black;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+}
+
+#socials .socials-container {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+}
+
+.socials-container a {
+  background-color: white;
+  padding: 1em;
+  border-radius: 50%;
+  height: 64px;
+  width: 64px;
+  display: grid;
+  place-items: center;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.socials-container a svg {
+  height: 32px;
+  fill: #333;
+  transition: fill 0.3s ease;
+}
+
+/* Tooltip Styling */
+.socials-container a::before {
+  content: attr(data-social);
+  position: absolute;
+  background-color: var(--accent-color);
+  color: white;
+  font-size: 16px; /* Increased font size */
+  font-weight: 500;
+  padding: 10px 20px; /* Increased padding */
+  border-radius: 25px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  transform: translateY(-30px) rotate(25deg);
+  opacity: 0;
+  transition: 200ms cubic-bezier(0.42, 0, 0.44, 1.68);
+  z-index: 10;
+  white-space: nowrap;
+}
+
+.socials-container a::after {
+  content: "";
+  position: absolute;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-top: 10px solid var(--accent-color);
+  transform: translateY(0) rotate(25deg);
+  opacity: 0;
+  transition: 200ms cubic-bezier(0.42, 0, 0.44, 1.68);
+  z-index: 10;
+}
+
+/* Hover Effects */
+.socials-container a:hover {
+  background-color: var(--accent-color);
+}
+
+.socials-container a:hover svg {
+  fill: white;
+}
+
+.socials-container a:hover::before {
+  transform: translateY(-65px) rotate(0);
+  opacity: 1;
+}
+
+.socials-container a:hover::after {
+  transform: translateY(-42px) rotate(0);
+  opacity: 1;
+}
+
+/* Social Media Specific Colors */
+.socials-container a.gmail {
+  --accent-color: var(--gmail-color);
+}
+
+.socials-container a.github {
+  --accent-color: var(--nextjs-color);
+}
+
+/* Media Query For Mobile */
+@media only screen and (max-width: 600px) {
+  #socials h1.section-title {
+    font-size: 3.5rem;
+    padding-bottom: 8px;
+  }
+}

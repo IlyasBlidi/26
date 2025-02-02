@@ -1,0 +1,213 @@
+#skills .skills {
+  max-width: 1200px;
+  padding: 0;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+#skills .skill-top {
+  margin-bottom: 50px;
+}
+
+#skills .skill-top h1.section-title {
+  font-size: 5.5rem;
+  font-weight: 600;
+  color: black;
+  margin-bottom: 50px;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+}
+
+#skills .skill-top h1.section-title span {
+  color: crimson;
+}
+
+#skills .skill-top p {
+  font-size: 2rem;
+  color: #555;
+  line-height: 2.5rem;
+  text-align: justify;
+  text-align-last: center;
+  max-width: 800px;
+  /* margin: 0 auto; */
+  font-weight: 400;
+}
+
+#skills .skill-bottom {
+  display: flex;
+  column-gap: 10px;
+  row-gap: 20px;
+  flex-wrap: wrap;
+  padding-inline: 15rem;
+}
+
+#skills .skill-item {
+  padding: 10px 15px;
+  border-radius: 5px;
+  background: rgba(153, 153, 153, 0.2);
+  color: #666;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  height: 40px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  flex-grow: 1;
+}
+
+#skills .skill-item > .skill-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+}
+
+#skills .skill-item::after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: 1s;
+  z-index: 2;
+}
+
+#skills .skill-item:hover::after {
+  border-radius: 5px;
+  width: 100%;
+  height: 100%;
+}
+
+#skills .skill-item:hover > .skill-icon {
+  display: block;
+  z-index: 4;
+  transition: 1.3s;
+}
+
+#skills .skill-item:hover > .skill-name {
+  color: transparent;
+}
+
+/* Apply background colors based on the skill-item class */
+#skills .skill-item.html:hover::after {
+  background-color: var(--html-color);
+}
+
+#skills .skill-item.css:hover::after {
+  background-color: var(--css-color);
+}
+
+#skills .skill-item.tailwind:hover::after {
+  background-color: var(--tailwind-color);
+}
+
+#skills .skill-item.java-script:hover::after {
+  background-color: var(--java-script-color);
+}
+
+#skills .skill-item.type-script:hover::after {
+  background-color: var(--type-script-color);
+}
+
+#skills .skill-item.java:hover::after {
+  background-color: var(--java-color);
+}
+
+#skills .skill-item.python:hover::after {
+  background-color: var(--python-color);
+}
+
+#skills .skill-item.jupyter:hover::after {
+  background-color: var(--jupyter-color);
+}
+
+#skills .skill-item.react:hover::after {
+  background-color: var(--react-color);
+}
+
+#skills .skill-item.redux:hover::after {
+  background-color: var(--redux-color);
+}
+
+#skills .skill-item.nextjs:hover::after {
+  background-color: var(--nextjs-color);
+}
+
+#skills .skill-item.nestjs:hover::after {
+  background-color: var(--nestjs-color);
+}
+
+#skills .skill-item.spring-boot:hover::after {
+  background-color: var(--spring-boot-color);
+}
+
+#skills .skill-item.spring-security:hover::after {
+  background-color: var(--spring-boot-color);
+}
+
+#skills .skill-item.mysql:hover::after {
+  background-color: var(--mysql-color);
+}
+
+#skills .skill-item.postgresql:hover::after {
+  background-color: var(--postgresql-color);
+}
+
+#skills .skill-item.mongodb:hover::after {
+  background-color: var(--mongodb-color);
+}
+
+#skills .skill-item.gitt:hover::after {
+  background-color: var(--git-color);
+}
+
+#skills .skill-item.docker:hover::after {
+  background-color: var(--docker-color);
+}
+
+#skills .skill-item.wsl:hover::after {
+  background-color: var(--wsl-color);
+}
+
+#skills .skill-item.git-hub:hover::after {
+  background-color: var(--github-color);
+}
+
+/* Media Query For Tablet */
+@media only screen and (max-width: 933px) {
+  /* #skills .skill-item {
+    flex: 1 1 calc(50% - 20px);
+  } */
+
+  #skills .skill-bottom {
+    padding-inline: 0;
+  }
+}
+
+/* Media Query For Mobile */
+@media only screen and (max-width: 600px) {
+  #skills .skill-top h1.section-title {
+    font-size: 3.5rem;
+  }
+
+  #skills .skill-top p {
+    font-size: 1.7rem;
+  }
+
+  #skills .skill-bottom {
+    padding-inline: 0;
+  }
+}

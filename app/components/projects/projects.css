@@ -1,0 +1,161 @@
+#projects .projects {
+  flex-direction: column;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 50px 0;
+}
+
+#projects .projects-header h1 {
+  margin-top: 10px;
+  margin-bottom: 50px;
+  font-size: 5.5rem;
+  font-weight: 600;
+}
+
+#projects .all-projects {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+#projects .project-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 80%;
+  margin: 20px auto;
+  overflow: hidden;
+  border-radius: 15px;
+}
+
+#projects .project-info {
+  padding: 30px;
+  flex-basis: 50%;
+  height: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  background-image: linear-gradient(60deg, #0a192f 0%, #1e3a5f 100%);
+  color: white;
+}
+
+#projects .project-info h1 {
+  font-size: 2.5rem;
+  text-align: center;
+  font-weight: 500;
+  width: 100%;
+}
+
+#projects .project-info h3 {
+  font-size: 1.3rem;
+  font-weight: 400;
+  text-align: center;
+  margin-top: 0px;
+  font-family: "Lora", serif;
+  font-style: italic;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+#projects .project-info p {
+  color: white;
+  text-align: justify;
+  text-align-last: center;
+  font-size: 1.3rem;
+  font-weight: 400;
+}
+
+#projects .project-img {
+  flex-basis: 50%;
+  height: 300px;
+  overflow: hidden;
+  position: relative;
+}
+
+#projects .project-img:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.75); /* 75% black overlay */
+  opacity: 0.7; /* Adjust opacity if needed */
+  z-index: 1; /* Ensure the overlay is above the image */
+}
+
+#projects .project-img img {
+  transition: 0.3s ease transform;
+  z-index: 0; /* Ensure the image is below the overlay */
+}
+
+#projects .project-item:hover .project-img img {
+  transform: scale(1.1);
+}
+
+/* Media Query For Tablet */
+@media only screen and (min-width: 990px) {
+  #projects .project-item {
+    flex-direction: row;
+  }
+
+  #projects .project-item:nth-child(even) {
+    flex-direction: row-reverse;
+  }
+
+  #projects .project-item {
+    height: 400px;
+    margin: 0;
+    width: 100%;
+    border-radius: 0;
+  }
+
+  #projects .all-projects {
+    border-radius: 15px;
+  }
+
+  #projects .all-projects .project-info {
+    height: 100%;
+  }
+
+  #projects .all-projects .project-img {
+    height: 100%;
+  }
+
+  #projects .project-info h1 {
+    font-size: 3rem;
+    text-align: left;
+  }
+
+  #projects .project-info h3 {
+    font-size: 1.5rem;
+    text-align: left;
+  }
+
+  #projects .project-info p {
+    color: white;
+    text-align: justify;
+    text-align-last: left;
+    font-size: 2rem;
+    font-weight: 400;
+  }
+}
+
+/* Media Query For Mobile */
+@media only screen and (max-width: 600px) {
+  #projects .projects-header h1 {
+    font-size: 3.5rem;
+  }
+
+  #about .col-center h2 {
+    font-size: 2rem;
+  }
+
+  #about .col-center p {
+    font-size: 1.7rem;
+  }
+}
