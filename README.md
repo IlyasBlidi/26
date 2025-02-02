@@ -23,18 +23,18 @@ To set up this project locally, follow these steps:
 
 1. **Clone the repository:**
 
-    ```sh
-    git clone https://github.com/IlyasBlidi/26.git
-    cd 26
-    ```
+   ```sh
+   git clone https://github.com/IlyasBlidi/26.git
+   cd 26
+   ```
 
 2. **Install pnpm globally:**
 
-    ```sh
-    npm install -g pnpm
-    ```
+   ```sh
+   npm install -g pnpm
+   ```
 
-4. **Install dependencies:**
+3. **Install dependencies:**
 
     ```sh
     pnpm install
@@ -44,6 +44,6 @@ To set up this project locally, follow these steps:
 
 To start the development server, run:
 
-    ```sh
-    pnpm run dev
-    ```
+```sh
+pnpm run dev
+```
