@@ -2,7 +2,7 @@
   flex-direction: column;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 100px 25px;
+  padding: 0 25px;
 }
 
 #projects .projects-header h1 {
