@@ -51,28 +51,14 @@
 /* Media Query For Mobile */
 @media only screen and (max-width: 600px) {
   #about .about {
-    padding-block: 70px;
+    padding-top: 70px;
+    padding-bottom: 0;
   }
 
   #about .about .col-center h1.section-title {
     font-size: 3.5rem;
   }
 
-  #about .about .col-center h2 {
-    font-size: 1.8rem;
-    margin-bottom: 32px;
-  }
-
-  #about .about .col-center p {
-    font-size: 1.6rem;
-  }
-}
-
-/* Media Query For Mobile */
-@media only screen and (max-width: 600px) {
-  #about .about {
-    padding-block: 70px;
-  }
   #about .about .col-center h2 {
     font-size: 1.8rem;
     margin-bottom: 32px;

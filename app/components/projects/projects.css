@@ -148,7 +148,8 @@
 /* Media Query For Mobile */
 @media only screen and (max-width: 600px) {
   #projects .projects {
-    padding-block: 70px;
+    padding-top: 70px;
+    padding-bottom: 0;
   }
 
   #projects .projects .projects-header h1.section-title {
