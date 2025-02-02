@@ -2,7 +2,9 @@
 
 This is my personal portfolio website built with [React Router V7](https://reactrouter.com/) and CSS.
 
-![Portfolio Screenshot](public/overview.png)
+<p align="center">
+    <img alt="portfolio-overview" width="100%" src="https://github.com/user-attachments/assets/b49acfba-32f2-4076-ab39-e295c8923bc7" />
+</p>
 
 ## Table of Contents
 
