@@ -35,7 +35,7 @@
   max-width: 60%;
   margin-inline: auto;
   align-self: flex-start;
-  margin-top: 10rem;
+  margin-top: 10.5rem;
 }
 
 #hero .intro h1 {
@@ -53,6 +53,7 @@
 
 #hero .intro h1:nth-child(1) {
   animation-delay: 1s;
+  font-size: 2.8rem;
 }
 
 #hero .intro h1:nth-child(2) {
@@ -130,6 +131,14 @@
 
   #hero .admiration .profile-img {
     max-width: 80%;
+  }
+}
+
+/* Media Query For Mobile */
+@media only screen and (max-width: 600px) {
+  #hero .intro h1:nth-child(1),
+  #hero .intro h1:nth-child(2) {
+    font-size: 2.8rem;
   }
 }
 

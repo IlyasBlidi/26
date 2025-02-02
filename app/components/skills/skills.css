@@ -1,6 +1,6 @@
 #skills .skills {
   max-width: 1200px;
-  padding: 0;
+  padding: 100px 25px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -30,7 +30,6 @@
   text-align: justify;
   text-align-last: center;
   max-width: 800px;
-  /* margin: 0 auto; */
   font-weight: 400;
 }
 
@@ -199,15 +198,21 @@
 
 /* Media Query For Mobile */
 @media only screen and (max-width: 600px) {
+  #skills .skills {
+    padding-block: 70px;
+    background-color: orange;
+  }
+
   #skills .skill-top h1.section-title {
     font-size: 3.5rem;
+    margin-bottom: 32px;
   }
 
-  #skills .skill-top p {
-    font-size: 1.7rem;
+  #skills .skills .skill-top p {
+    font-size: 1.6rem;
   }
 
-  #skills .skill-bottom {
-    padding-inline: 0;
+  #skills .skill-top {
+    margin-bottom: 32px;
   }
 }

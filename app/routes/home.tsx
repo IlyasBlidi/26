@@ -11,7 +11,7 @@ import type { Route } from "./+types/home";
 
 export function meta({}: Route.MetaArgs) {
   return [
-    { title: "ILYAS BLIDI" },
+    { title: "26" },
     { name: "description", content: "Welcome to Ilyas Blidi Portfolio!" },
   ];
 }

@@ -2,7 +2,7 @@
   flex-direction: column;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 45px 0;
+  padding: 100px 25px;
 }
 
 #socials h1.section-title {
@@ -102,6 +102,11 @@
 
 /* Media Query For Mobile */
 @media only screen and (max-width: 600px) {
+  #socials {
+    background-color: teal;
+    padding-block: 70px;
+  }
+
   #socials h1.section-title {
     font-size: 3.5rem;
     padding-bottom: 8px;

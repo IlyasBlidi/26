@@ -1,4 +1,4 @@
-import { GrJava } from "react-icons/gr";
+import { FaJava } from "react-icons/fa";
 import {
   SiCss3,
   SiDocker,
@@ -50,7 +50,7 @@ const skills = [
   },
   {
     name: "java",
-    iconComponent: GrJava,
+    iconComponent: FaJava,
     cssName: "java",
   },
   {

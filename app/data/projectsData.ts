@@ -31,7 +31,7 @@ const projects = [
     title: "Stock Management System (Internship)",
     description:
       "The development of this inventory management application includes the design and implementation of key functionality for inventory tracking, as well as monitoring project progress and evaluating possible improvements.",
-    image: "/images/gestion-de-stock.png",
+    image: "/images/gestion-de-stock1.png",
     technologies: ["Microsoft Access", "MySQL"],
   },
   {

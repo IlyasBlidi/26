@@ -2,7 +2,7 @@
   flex-direction: column;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 50px 0;
+  padding: 100px 25px;
 }
 
 #projects .projects-header h1 {
@@ -147,15 +147,12 @@
 
 /* Media Query For Mobile */
 @media only screen and (max-width: 600px) {
-  #projects .projects-header h1 {
+  #projects .projects {
+    padding-block: 70px;
+  }
+
+  #projects .projects .projects-header h1.section-title {
     font-size: 3.5rem;
-  }
-
-  #about .col-center h2 {
-    font-size: 2rem;
-  }
-
-  #about .col-center p {
-    font-size: 1.7rem;
+    margin-bottom: 32px;
   }
 }

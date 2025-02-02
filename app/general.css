@@ -14,7 +14,7 @@
   --tailwind-color: #06b6d4;
   --java-script-color: #f1d01b;
   --type-script-color: #007acc;
-  --java-color: #5382a1;
+  --java-color: #fc4c02;
   --python-color: #3776ab;
   --jupyter-color: #f37626;
   --react-color: #61dafb;
@@ -28,7 +28,7 @@
   --git-color: #f05539;
   --docker-color: #2496ed;
   --wsl-color: #e95420;
-  
+
   --gmail-color: #c72923;
 }
 
@@ -109,4 +109,3 @@ p {
 .brand h1 span {
   color: crimson;
 }
-
