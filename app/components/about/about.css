@@ -52,7 +52,6 @@
 @media only screen and (max-width: 600px) {
   #about .about {
     padding-block: 70px;
-    background-color: red;
   }
 
   #about .about .col-center h1.section-title {

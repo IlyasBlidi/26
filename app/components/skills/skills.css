@@ -187,10 +187,6 @@
 
 /* Media Query For Tablet */
 @media only screen and (max-width: 933px) {
-  /* #skills .skill-item {
-    flex: 1 1 calc(50% - 20px);
-  } */
-
   #skills .skill-bottom {
     padding-inline: 0;
   }
@@ -200,7 +196,6 @@
 @media only screen and (max-width: 600px) {
   #skills .skills {
     padding-block: 70px;
-    background-color: orange;
   }
 
   #skills .skill-top h1.section-title {

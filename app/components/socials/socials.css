@@ -103,7 +103,6 @@
 /* Media Query For Mobile */
 @media only screen and (max-width: 600px) {
   #socials {
-    background-color: teal;
     padding-block: 70px;
   }
 
