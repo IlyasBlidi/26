@@ -1,49 +1,8 @@
-# Portfolio Website
+# React + Vite
 
-This is my personal portfolio website built with [React Router V7](https://reactrouter.com/) and CSS.
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-<p align="center">
-    <img alt="portfolio-overview" width="100%" src="https://github.com/user-attachments/assets/b49acfba-32f2-4076-ab39-e295c8923bc7" />
-</p>
+Currently, two official plugins are available:
 
-## Table of Contents
-
-- [Features](#features)
-- [Setup](#setup)
-- [Development](#development)
-
-## Features
-
-- Responsive design
-- Interactive UI with animations
-
-## Setup
-
-To set up this project locally, follow these steps:
-
-1. **Clone the repository:**
-
-   ```sh
-   git clone https://github.com/IlyasBlidi/26.git
-   cd 26
-   ```
-
-2. **Install pnpm globally:**
-
-   ```sh
-   npm install -g pnpm
-   ```
-
-3. **Install dependencies:**
-
-    ```sh
-    pnpm install
-    ```
-
-## Development
-
-To start the development server, run:
-
-```sh
-pnpm run dev
-```
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
