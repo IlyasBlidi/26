@@ -44,10 +44,10 @@ export const Contact = () => {
   return (
     <section
       id="contact"
-      className="min-h-dvh flex flex-col items-center justify-center py-20"
+      className="min-h-dvh py-20 flex flex-col md:items-center"
     >
       <RevealOnScroll>
-        <div className="px-4 w-full min-w-[450px] md:w-[500px] sm:w-2/3 p-6">
+        <div className="px-4 w-full md:w-[500px] p-6">
           {/* Header */}
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold mb-1 bg-gradient-to-r from-blue-500 via-cyan-400 to-purple-500 bg-clip-text text-transparent">

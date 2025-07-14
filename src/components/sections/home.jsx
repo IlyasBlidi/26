@@ -1,4 +1,3 @@
-// no import changes
 import { HashLink } from "react-router-hash-link";
 import { RevealOnScroll } from "..";
 import { ripple } from "@/utils";

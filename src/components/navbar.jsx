@@ -20,8 +20,8 @@ export const Navbar = ({ menuOpen, setMenuOpen }) => {
 
   return (
     <nav className="fixed top-0 w-full z-50 bg-black/70 backdrop-blur border-b border-white/10 shadow-md">
-      <div className="max-w-6xl mx-auto px-4">
-        <div className="flex justify-between items-center h-16">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 md:px-8">
+        <div className="flex justify-between items-center h-16 overflow-x-hidden">
           <HashLink
             to="/#home"
             className="text-2xl font-extrabold tracking-tight text-white"

@@ -1,42 +1,25 @@
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef } from "react";
 
-export const RevealOnScroll = ({
-  children,
-  threshold = 0.2,
-  rootMargin = "0px 0px -50px 0px",
-  visibleClass = "visible",
-  hiddenClass = "reveal",
-  once = true,
-}) => {
+export const RevealOnScroll = ({ children }) => {
   const ref = useRef(null);
-  const [hasRevealed, setHasRevealed] = useState(false);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
-        if (entry.isIntersecting && ref.current) {
-          ref.current.classList.add(visibleClass);
-          if (once) {
-            observer.unobserve(ref.current);
-            setHasRevealed(true);
-          }
+        if (entry.isIntersecting) {
+          ref.current.classList.add("visible");
         }
       },
-      { threshold, rootMargin }
+      { threshold: 0.2, rootMargin: "0px 0px -50px 0px" }
     );
 
-    if (ref.current && !(once && hasRevealed)) {
-      observer.observe(ref.current);
-    }
+    if (ref.current) observer.observe(ref.current);
 
-    return () => {
-      if (ref.current) observer.unobserve(ref.current);
-      observer.disconnect();
-    };
-  }, [threshold, rootMargin, visibleClass, once, hasRevealed]);
+    return () => observer.disconnect();
+  });
 
   return (
-    <div ref={ref} className={hiddenClass}>
+    <div ref={ref} className="reveal">
       {children}
     </div>
   );
