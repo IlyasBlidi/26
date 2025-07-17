@@ -1,7 +1,12 @@
 import { HashLink } from "react-router-hash-link";
 import { RevealOnScroll } from "..";
 import { ripple } from "@/utils";
-import { ArrowRight, CodeXml, MessageCircleMore } from "lucide-react";
+import {
+  ArrowRight,
+  CodeXml,
+  MessageCircleMore,
+  ExternalLink,
+} from "lucide-react";
 
 export const Home = () => {
   return (
@@ -14,7 +19,6 @@ export const Home = () => {
         <div className="absolute bottom-1/4 right-1/4 w-52 sm:w-64 md:w-80 h-52 sm:h-64 md:h-80 bg-cyan-500/10 rounded-full blur-3xl animate-pulse delay-1000"></div>
         <div className="absolute top-1/2 left-1/2 w-48 sm:w-56 md:w-64 h-48 sm:h-56 md:h-64 bg-purple-500/5 rounded-full blur-3xl animate-pulse delay-2000"></div>
 
-        {/* Floating particles */}
         {[...Array(12)].map((_, i) => (
           <div
             key={i}
@@ -29,7 +33,6 @@ export const Home = () => {
           />
         ))}
 
-        {/* Geometric shapes */}
         <div className="absolute top-20 right-20 w-2 h-2 bg-cyan-400/30 rotate-45 animate-pulse"></div>
         <div className="absolute bottom-32 left-16 w-3 h-3 border border-blue-400/30 rotate-45 animate-pulse delay-1000"></div>
         <div className="absolute top-1/3 right-1/3 w-1 h-8 bg-gradient-to-b from-blue-400/20 to-transparent animate-pulse delay-2000"></div>
@@ -100,6 +103,20 @@ export const Home = () => {
                   <MessageCircleMore className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                 </span>
               </HashLink>
+
+              <a
+                href="https://drive.google.com/file/d/1cYb6mJzJKMCIKjnJdcfC0JtU3iPnUM_a/view?usp=sharing"
+                target="_blank"
+                rel="noopener noreferrer"
+                onMouseDown={(e) => ripple.create(e, "dark")}
+                className="group flex items-center justify-center bg-gradient-to-r from-blue-600 to-teal-400 text-white py-3 px-4 sm:py-4 sm:px-8 rounded-full font-medium text-sm sm:text-base transition-all duration-300 relative overflow-hidden hover:-translate-y-1 hover:shadow-[0_0_25px_rgba(56,189,248,0.5)] hover:shadow-teal-400/25"
+              >
+                <span className="relative z-10 flex items-center justify-center gap-2">
+                  View CV
+                  <ExternalLink className="w-5 h-5 group-hover:translate-y-0.5 transition-transform" />
+                </span>
+                <div className="absolute inset-0 bg-gradient-to-r from-teal-400 to-blue-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              </a>
             </div>
           </div>
         </div>
