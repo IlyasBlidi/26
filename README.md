@@ -3,7 +3,7 @@
 This is my personal portfolio website built with [React](https://react.dev/) using [Vite](https://vite.dev/), and [Tailwind CSS](https://tailwindcss.com/).
 
 <p align="center">
-    <img alt="portfolio-overview" width="100%" src="https://github.com/user-attachments/assets/4d367adf-3f3c-4a4b-8dc0-23e3b42c69b0" />
+    <img alt="portfolio-overview" width="100%" src="https://github.com/user-attachments/assets/2f1cfbad-4010-4ae3-a449-5f42f54e8897" />
 </p>
 
 ## Table of Contents
