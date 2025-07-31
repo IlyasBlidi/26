@@ -54,7 +54,7 @@ export const Home = () => {
                     <div className="flex items-center gap-3 text-cyan-300 bg-cyan-500/10 border border-cyan-500/30 rounded-full px-6 py-3 backdrop-blur-sm transition-all duration-300 hover:bg-green-500/20 hover:border-green-400/50">
                       <CodeXml className="w-6 h-6 transition-transform" />
                       <span className="font-medium text-lg sm:text-xl">
-                        Full-Stack Developer
+                        Full Stack Developer
                       </span>
                     </div>
                     <div className="absolute inset-0 bg-cyan-500/5 rounded-full blur-xl group-hover:bg-cyan-500/10 transition-all duration-300"></div>
