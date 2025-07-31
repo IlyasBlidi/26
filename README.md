@@ -24,17 +24,25 @@ To set up this project locally, follow these steps:
 1. **Clone the repository:**
 
    ```sh
-   git clone https://github.com/IlyasBlidi/26.git
-   cd 26
+   git clone https://github.com/IlyasBlidi/portfolio-website.git
+   cd portfolio-website
    ```
 
-2. **Install yarn globally (if not installed):**
+   **Or clone it with a custom directory name:**
+
+   ```sh
+   git clone https://github.com/IlyasBlidi/portfolio-website.git custom-directory-name
+   cd custom-directory-name
+
+   ```
+
+3. **Install yarn globally (if not installed):**
 
    ```sh
    npm install -g yarn
    ```
 
-3. **Install dependencies:**
+4. **Install dependencies:**
 
     ```sh
     yarn
